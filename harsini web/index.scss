@@ -1,0 +1,15 @@
+.animated-title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--pink);
+    text-align: center;
+   
+    @keyframes flickerAnimation {
+       0% { opacity: 1; }
+       50% { opacity: 0.4; }
+       100% { opacity: 1; }
+    }
+   
+    animation: flickerAnimation 2s linear infinite;
+   }
